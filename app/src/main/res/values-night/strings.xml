@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sign_up_with">Sign up with</string>
+    <string name="to_continue">to continue…</string>
+    <string name="enter_your_name">Enter your Name</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_email_address">Enter Email Address</string>
+    <string name="re_enter_your_password">Re-enter your Password</string>
+    <string name="address">Address</string>
+</resources>

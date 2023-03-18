@@ -4,115 +4,124 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".LoginActivity">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/welcome"
-            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/small_logo"
-            app:srcCompat="@drawable/logosmall" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/sign_in_to_continue"
-            android:textAppearance="@style/TextAppearance.AppCompat"
-            android:textStyle="bold" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/fifteen_dp"
-            android:background="@drawable/edit_text_background"
-            android:hint="@string/username_email_address"
-            android:inputType="text"
-            android:minHeight="48dp"
-            android:padding="@dimen/fifteen_dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:autofillHints="" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/fifteen_dp"
-            android:background="@drawable/edit_text_background"
-            android:hint="@string/enter_your_password"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:padding="@dimen/fifteen_dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:autofillHints="" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/ten_dp"
-            android:paddingBottom="@dimen/ten_dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <CheckBox
-                    android:id="@+id/checkBox"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/remember_me"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
-
-
-            </LinearLayout>
+            android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:text="@string/forgot_password"
+                android:contentDescription="@string/small_logo"
+                app:srcCompat="@drawable/logo_small" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in_to_continue"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/username_email_address"
+                android:inputType="text"
+                android:padding="@dimen/fifteen_dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                android:textColor="@color/appPrimary" />
+                android:autofillHints="" />
 
-        </RelativeLayout>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/fifteen_dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/enter_your_password"
+                android:inputType="textPassword"
+                android:padding="@dimen/fifteen_dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:autofillHints="" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/buttonbackground"
-            android:padding="@dimen/fifteen_dp"
-            android:text="@string/sign_in"
-            android:textColor="#000000"
-            android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/ten_dp"
+                android:paddingBottom="@dimen/ten_dp">
 
-        <TextView
-            android:id="@+id/createAccount"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/twenty_dp"
-            android:text="@string/have_account"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <CheckBox
+                        android:id="@+id/checkBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remember_me"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_forgot_onclick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/forgot_password"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#D32F2F"
+                    tools:ignore="RelativeOverlap" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:padding="@dimen/fifteen_dp"
+                android:text="@string/sign_in"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/twenty_dp"
+                android:text="@string/have_account"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
 
 </LinearLayout>

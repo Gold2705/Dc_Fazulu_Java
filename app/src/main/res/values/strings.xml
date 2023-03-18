@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Dc Dealz</string>
+    <string name="welcome">Welcome to</string>
+    <string name="small_logo">Small Logo</string>
+    <string name="sign_in_to_continue">Sign in to continue...</string>
+    <string name="email_address">Email Address</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="username_email_address">Username / Email Address</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="have_account">Don’t Have an account? <font color="red">Create Account</font> </string>
+    <string name="i_have_an_account_sign_in">I have an account?  <font color="red"> Sign In </font> </string>
+</resources>

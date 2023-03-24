@@ -9,7 +9,6 @@ import android.widget.TextView;
 public class LoginActivity extends AppCompatActivity {
 
     TextView txt_forgot_onclick, createAccount;
-
     Common common;
 
     @Override
